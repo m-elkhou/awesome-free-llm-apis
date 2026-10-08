@@ -76,19 +76,19 @@ Free tier, no credit card. Free-tier prompts may be used by Google to improve pr
 
 Base URL: `https://generativelanguage.googleapis.com/v1beta`
 
-| Model Name            | Context | Max Output | Modality                     | Rate Limit        |
-| --------------------- | ------- | ---------- | ---------------------------- | ----------------- |
-| Gemini 3.8 Flash      | 1M      | 65K        | Text + Image + Audio + Video | —                 |
-| Gemini 3.7 Flash      | 1M      | 65K        | Text + Image + Audio + Video | —                 |
-| Gemini 3.6 Flash      | 1M      | 65K        | Text + Image + Audio + Video | 15 RPM, 1,500 RPD |
-| Gemini 3.5 Flash      | 1M      | 65K        | Text + Image + Audio + Video | 15 RPM, 1,500 RPD |
-| Gemini 3.5 Flash-Lite | 1M      | 65K        | Text + Image + Audio + Video | 30 RPM, 1,500 RPD |
-| Gemini 3.1 Flash-Lite | 1M      | 65K        | Text + Image + Audio + Video | 30 RPM, 1,500 RPD |
-| Gemini 2.5 Flash      | 1M      | 65K        | Text + Image + Audio + Video | 15 RPM, 1,500 RPD |
-| Gemini 2.5 Flash-Lite | 1M      | 65K        | Text + Image + Audio + Video | 30 RPM, 1,500 RPD |
-| Gemini 2.5 Pro        | 1M      | 65K        | Text + Image + Audio + Video | 5 RPM, 50 RPD     |
-| Gemma 4 31B           | 256K    | 32K        | Text                         | —                 |
-| Gemma 4 26B A4B       | 256K    | 32K        | Text                         | —                 |
+| Model Name            | Context | Max Output | Modality                     | Rate Limit |
+| --------------------- | ------- | ---------- | ---------------------------- | ---------- |
+| Gemini 3.8 Flash      | 1M      | 65K        | Text + Image + Audio + Video | —          |
+| Gemini 3.7 Flash      | 1M      | 65K        | Text + Image + Audio + Video | —          |
+| Gemini 3.6 Flash      | 1M      | 65K        | Text + Image + Audio + Video | —          |
+| Gemini 3.5 Flash      | 1M      | 65K        | Text + Image + Audio + Video | —          |
+| Gemini 3.5 Flash-Lite | 1M      | 65K        | Text + Image + Audio + Video | —          |
+| Gemini 3.1 Flash-Lite | 1M      | 65K        | Text + Image + Audio + Video | —          |
+| Gemini 2.5 Flash      | 1M      | 65K        | Text + Image + Audio + Video | —          |
+| Gemini 2.5 Flash-Lite | 1M      | 65K        | Text + Image + Audio + Video | —          |
+| Gemini 2.5 Pro        | 1M      | 65K        | Text + Image + Audio + Video | —          |
+| Gemma 4 31B           | 256K    | 32K        | Text + Image                 | —          |
+| Gemma 4 26B A4B       | 256K    | 32K        | Text + Image                 | —          |
 
 ### [Mistral AI](https://console.mistral.ai/api-keys) 🇫🇷
 
@@ -189,7 +189,6 @@ Base URL: `https://api.kilo.ai/api/gateway`
 | `inclusionai/ling-3.1-flash`                         | 262K    | 32K        | Text          | 200 req/hr |
 | `inclusionai/ling-3.0-flash-sante:free`              | 262K    | 32K        | Text          | 200 req/hr |
 | `apodex/apodex-1.1-mini:free`                        | 262K    | 235K       | Text          | 200 req/hr |
-| `qwen/qwen3.8-27b:free`                              | 262K    | 235K       | Multimodal    | 200 req/hr |
 | `dots-studio/dots-3-note-preview:free`               | 512K    | 460K       | Text + Vision | 200 req/hr |
 
 ### [LLM7.io](https://token.llm7.io) 🇬🇧
@@ -204,6 +203,10 @@ Base URL: `https://api.llm7.io/v1`
 | mistral-Nemo-Instruct-2407 | 128K    | —          | Text             | 60 RPM, 250 req/hr (free token) |
 | minimax-m2.7               | 180K    | —          | Text (reasoning) | 60 RPM, 250 req/hr (free token) |
 | DeepSeek-V4-Flash-0731     | 400K    | —          | Text (reasoning) | 60 RPM, 250 req/hr (free token) |
+| deepseek-v4-pro            | 1M      | —          | Text             | 60 RPM, 250 req/hr (free token) |
+| minimax-m3                 | 512K    | —          | Text (reasoning) | 60 RPM, 250 req/hr (free token) |
+| glm-5.2                    | 976K    | —          | Text (reasoning) | 60 RPM, 250 req/hr (free token) |
+| `gemma4:31b`               | 262K    | —          | Text             | 60 RPM, 250 req/hr (free token) |
 
 ### [ModelScope](https://modelscope.cn/my/myaccesstoken) 🇨🇳
 
@@ -227,10 +230,12 @@ Base URL: `https://integrate.api.nvidia.com/v1`
 | ----------------------------------------- | ------- | ---------- | -------------------------------------- | ------------------ |
 | `nvidia/nemotron-3-super-120b-a12b`       | 1M      | 262K       | Text                                   | 40 RPM, 10,000 RPD |
 | `nvidia/llama-3.1-nemotron-ultra-253b-v1` | 128K    | 4K         | Text                                   | 40 RPM, 10,000 RPD |
-| `google/gemma-4-31b-it`                   | 262K    | 8K         | Text                                   | 40 RPM, 10,000 RPD |
+| `google/gemma-4-31b-it`                   | 262K    | 8K         | Text + Image + Video                   | 40 RPM, 10,000 RPD |
 | `mistralai/mistral-large-2-instruct`      | 128K    | 4K         | Text                                   | 40 RPM, 10,000 RPD |
 | `nvidia/nemotron-3-ultra-550b-a55b`       | 1M      | 262K       | Text                                   | 40 RPM, 10,000 RPD |
 | `openai/gpt-oss-20b`                      | 131K    | 131K       | Text                                   | 40 RPM, 10,000 RPD |
+| `z-ai/glm-5.3`                            | 1M      | —          | Text                                   | Varies             |
+| `z-ai/glm-5.3-flash`                      | 1M      | —          | Text + Image                           | Varies             |
 | + 92 more models                          | Varies  | Varies     | Text, Image, Video, Speech, Embeddings | 40 RPM, 10,000 RPD |
 
 ### [Ollama Cloud](https://ollama.com/settings/keys) 🇺🇸
@@ -258,25 +263,25 @@ Base URL: `https://ollama.com/api`
 
 Base URL: `https://openrouter.ai/api/v1`
 
-| Model Name                               | Context | Max Output | Modality             | Rate Limit     |
-| ---------------------------------------- | ------- | ---------- | -------------------- | -------------- |
-| `nvidia/nemotron-3-super-120b-a12b:free` | 262K    | 262K       | Text                 | 20 RPM, 50 RPD |
-| `cohere/north-mini-code:free`            | 256K    | 64K        | Text (code)          | 20 RPM, 50 RPD |
-| `google/gemma-4-26b-a4b-it:free`         | 262K    | 32K        | Text + Image         | 20 RPM, 50 RPD |
-| `google/gemma-4-31b-it:free`             | 262K    | 32K        | Text + Image         | 20 RPM, 50 RPD |
-| `nvidia/nemotron-nano-9b-v2:free`        | 128K    | —          | Text                 | 20 RPM, 50 RPD |
-| `nvidia/nemotron-nano-12b-v2-vl:free`    | 128K    | 128K       | Text + Image         | 20 RPM, 50 RPD |
-| `poolside/laguna-s-2.1:free`             | 262K    | 32K        | Text (code)          | 20 RPM, 50 RPD |
-| `poolside/laguna-xs-2.1:free`            | 262K    | 32K        | Text (code)          | 20 RPM, 50 RPD |
-| `apodex/apodex-1.1-mini:free`            | 262K    | 235K       | Text                 | 20 RPM, 50 RPD |
-| `inclusionai/ling-3.0-flash-sante:free`  | 262K    | 32K        | Text                 | 20 RPM, 50 RPD |
-| `qwen/qwen3.8-27b:free`                  | 262K    | 235K       | Text + Image + Video | 20 RPM, 50 RPD |
-| `dots-studio/dots-3-note-preview:free`   | 512K    | 460K       | Text + Image         | 20 RPM, 50 RPD |
-| `liquid/lfm-2.5-2.6b:free`               | 64K     | 8K         | Text                 | 20 RPM, 50 RPD |
-| `nvidia/nemotron-3.5-lightning:free`     | 1M      | 65K        | Text                 | 20 RPM, 50 RPD |
-| `thinkingmachines/inkling:free`          | 1M      | 262K       | Text + Image + Audio | 20 RPM, 50 RPD |
-| `nvidia/nemotron-3-ultra-550b-a55b:free` | 1M      | 65K        | Text                 | 20 RPM, 50 RPD |
-| + 6 more free models                     | Varies  | Varies     | Text / Image         | 20 RPM, 50 RPD |
+| Model Name                                           | Context | Max Output | Modality                     | Rate Limit     |
+| ---------------------------------------------------- | ------- | ---------- | ---------------------------- | -------------- |
+| `nvidia/nemotron-3-super-120b-a12b:free`             | 262K    | 262K       | Text                         | 20 RPM, 50 RPD |
+| `cohere/north-mini-code:free`                        | 256K    | 64K        | Text (code)                  | 20 RPM, 50 RPD |
+| `google/gemma-4-26b-a4b-it:free`                     | 262K    | 32K        | Text + Image                 | 20 RPM, 50 RPD |
+| `google/gemma-4-31b-it:free`                         | 262K    | 32K        | Text + Image                 | 20 RPM, 50 RPD |
+| `nvidia/nemotron-nano-9b-v2:free`                    | 128K    | —          | Text                         | 20 RPM, 50 RPD |
+| `nvidia/nemotron-nano-12b-v2-vl:free`                | 128K    | 128K       | Text + Image                 | 20 RPM, 50 RPD |
+| `poolside/laguna-s-2.1:free`                         | 262K    | 32K        | Text (code)                  | 20 RPM, 50 RPD |
+| `poolside/laguna-xs-2.1:free`                        | 262K    | 32K        | Text (code)                  | 20 RPM, 50 RPD |
+| `apodex/apodex-1.1-mini:free`                        | 262K    | 235K       | Text                         | 20 RPM, 50 RPD |
+| `inclusionai/ling-3.0-flash-sante:free`              | 262K    | 32K        | Text                         | 20 RPM, 50 RPD |
+| `dots-studio/dots-3-note-preview:free`               | 512K    | 460K       | Text + Image                 | 20 RPM, 50 RPD |
+| `liquid/lfm-2.5-2.6b:free`                           | 64K     | 8K         | Text                         | 20 RPM, 50 RPD |
+| `nvidia/nemotron-3.5-lightning:free`                 | 1M      | 65K        | Text                         | 20 RPM, 50 RPD |
+| `thinkingmachines/inkling:free`                      | 1M      | 262K       | Text + Image + Audio         | 20 RPM, 50 RPD |
+| `nvidia/nemotron-3-ultra-550b-a55b:free`             | 1M      | 65K        | Text                         | 20 RPM, 50 RPD |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | 256K    | 65K        | Text + Image + Audio + Video | 20 RPM, 50 RPD |
+| + 6 more free models                                 | Varies  | Varies     | Text / Image                 | 20 RPM, 50 RPD |
 
 ### [OVHcloud AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/) 🇫🇷
 
@@ -322,7 +327,7 @@ Base URL: `https://api.siliconflow.cn/v1`
 
 Know a free tier that's missing? [Open a PR](contributing.md). Include the provider, endpoint, rate limits (link to their docs), and a few notable models. Trial credits and time-limited promos don't count.
 
-[^1]: The Gemini API free tier is available to developers in the EU, UK, and Switzerland; the [available regions](https://ai.google.dev/gemini-api/docs/available-regions) page lists these regions. The [terms](https://ai.google.dev/gemini-api/terms) still require you to use only Paid Services when you make an API Client available to users in the European Economic Area, Switzerland, or the UK. Google no longer publishes per-model free-tier rate limits; check your quotas in [AI Studio](https://aistudio.google.com/). Free-tier prompts may be used by Google to improve products, except for users in the EEA, Switzerland and the UK, where the paid-services data terms also govern the unpaid quota, so those prompts are not used to improve Google products. `gemini-3.1-flash-lite` is on the [deprecation schedule](https://ai.google.dev/gemini-api/docs/deprecations), with a shutdown date of May 7, 2027 and `gemini-3.5-flash-lite` as its replacement; the row stays because the model is live and free today.
+[^1]: The Gemini API free tier is available to developers in the EU, UK, and Switzerland; the [available regions](https://ai.google.dev/gemini-api/docs/available-regions) page lists these regions. The [terms](https://ai.google.dev/gemini-api/terms) still require you to use only Paid Services when you make an API Client available to users in the European Economic Area, Switzerland, or the UK. Google no longer publishes per-model free-tier rate limits; check your quotas in [AI Studio](https://aistudio.google.com/). Free-tier prompts may be used by Google to improve products, except for users in the EEA, Switzerland and the UK, where the paid-services data terms also govern the unpaid quota, so those prompts are not used to improve Google products. `gemini-3.1-flash-lite` is on the [deprecation schedule](https://ai.google.dev/gemini-api/docs/deprecations), with a shutdown date of May 7, 2027 and `gemini-3.5-flash-lite` as its replacement; the row stays because the model is live and free today. Access to the 2.5 models is limited to users who have actively used them in the past.
 [^2]: Groq shut down qwen/qwen3.6-27b on September 14, 2026 (replaced by qwen/qwen3.8-27b) and groq/compound and groq/compound-mini on September 21, 2026 ([deprecations](https://console.groq.com/docs/deprecations)). Free-plan limits vary by model; the chat models listed get 1,000 RPD ([rate limits](https://console.groq.com/docs/rate-limits)).
 [^3]: Ollama Cloud measures usage by input, cached input, and output tokens weighted per model ([FAQ](https://docs.ollama.com/cloud)). Free tier has session limits resetting every 5 hours and weekly limits resetting every 7 days. Cloud models are also served through Ollama's OpenAI-compatible endpoint at ollama.com/v1.
 [^4]: Free models default to 50 RPD per model. A one-time purchase of $10+ in credits unlocks 1,000 RPD for free models. OpenRouter also offers a [Free Models Router](https://openrouter.ai/docs/guides/routing/routers/free-models-router) (`openrouter/free`) and [model fallbacks](https://openrouter.ai/docs/guides/routing/model-fallbacks) for chaining models in priority order. Free providers may log prompts for training.
